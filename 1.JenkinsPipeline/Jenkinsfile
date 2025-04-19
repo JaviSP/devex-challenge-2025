@@ -1,0 +1,9 @@
+// This Jenkinsfile is for a CI pipeline that builds, tests, and deploys a Python application.
+
+@Library('eburySharedLibrary@v1') _
+
+pythonServicePipeline {
+  serviceName = 'eburyTransferMoneyService'
+  pythonVersion = '3.12'
+  unitTestGroups = ['unit1', 'unit2']
+}
